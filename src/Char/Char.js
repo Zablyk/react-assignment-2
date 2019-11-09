@@ -1,17 +1,18 @@
 import React from 'react';
 
 
-const char = () => {
+const char = (props) => {
     const style = {
         display: 'inline-block',
         padding: '16px',
-        textalign: 'center',
+        textAlign: 'center',
         margin: '16px',
         border: '1px solid black'
     };
 
     return(
         <div className="Char" style={style}>
+        {props.character}
         </div>
     )
 }
